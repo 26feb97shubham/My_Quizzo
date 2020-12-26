@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/plane_bg"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/list_of_badges"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:numColumns="3"/>
+
+</LinearLayout>

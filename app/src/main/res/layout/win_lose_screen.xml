@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.example.my_quizzo.widgets.GothamTextView
+            android:id="@+id/quizResultMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="You Won!"
+            android:textSize="25sp" />
+
+        <include
+            android:id="@+id/pointsWrapper_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            layout="@layout/pointswrapper" />
+
+        <LinearLayout
+            android:id="@+id/buttons_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/buttonsLeftWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.example.my_quizzo.widgets.GothamButtonView
+                    android:id="@+id/rematchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_item_bg"
+                    android:gravity="center"
+                    android:text="Rematch" />
+
+                <com.example.my_quizzo.widgets.GothamButtonView
+                    android:id="@+id/addFriendButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_item_bg"
+                    android:gravity="center"
+                    android:text="Add Friend" />
+
+                <com.example.my_quizzo.widgets.GothamButtonView
+                    android:id="@+id/chat_with_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_item_bg"
+                    android:gravity="center"
+                    android:text="Chat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonsRightWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.example.my_quizzo.widgets.GothamButtonView
+                    android:id="@+id/challengeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_item_bg"
+                    android:gravity="center"
+                    android:text="LeaderBoards" />
+
+                <com.example.my_quizzo.widgets.GothamButtonView
+                    android:id="@+id/viewProfileButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/list_item_bg"
+                    android:gravity="center"
+                    android:text="View Profile" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/users_short_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/users_header_2" />
+
+        <LinearLayout
+            android:id="@+id/users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/userWrapper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.example.my_quizzo.widgets.PieChartView
+                    android:id="@id/pie_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userWrapper2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.example.my_quizzo.widgets.PieChartView
+                    android:id="@id/pie_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.example.my_quizzo.widgets.BarChartViewMultiDataSet
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</ScrollView>

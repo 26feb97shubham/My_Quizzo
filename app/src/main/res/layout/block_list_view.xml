@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_light"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/abc_ic_search"
+        android:hint="Search" />
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/debugMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text=""
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <com.example.my_quizzo.widgets.ExpandableHeightListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:divider="#00000000"
+        android:listSelector="@android:color/transparent"
+        android:minHeight="100dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="none"
+        android:stackFromBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/view_all_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+
+        <com.example.my_quizzo.widgets.GothamTextView
+            android:id="@+id/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/down_icon"
+            android:padding="4dp"
+            android:text="  "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

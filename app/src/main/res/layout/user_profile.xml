@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_profile_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/profile_data_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/user_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/user_info_card" />
+
+        <com.example.my_quizzo.widgets.SeperatorView
+            android:id="@+id/seperatorView1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:id="@+id/win_lose_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.example.my_quizzo.widgets.GothamTextView
+                android:id="@+id/win_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10 Won" />
+
+            <com.example.my_quizzo.widgets.GothamTextView
+                android:id="@+id/lose_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10 Lost" />
+
+            <com.example.my_quizzo.widgets.GothamTextView
+                android:id="@+id/tie_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2 Tie" />
+
+        </LinearLayout>
+
+        <com.example.my_quizzo.widgets.SeperatorView
+            android:id="@+id/seperatorView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:id="@+id/chartWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.my_quizzo.widgets.PieChartView
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+              />
+
+            <com.example.my_quizzo.widgets.BarChartViewMultiDataSet
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My_Quizzo</string>
+    <string name="quiz_app_badge">Quiz App Badge</string>
+    <string name="list_of_badges">List of Badges</string>
+</resources>

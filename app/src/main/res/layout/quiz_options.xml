@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        <com.example.my_quizzo.widgets.GothamButtonView
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/quiz_option_background"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Button"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <com.example.my_quizzo.widgets.GothamButtonView
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/quiz_option_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Button"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <com.example.my_quizzo.widgets.GothamButtonView
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/quiz_option_background"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Button"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+            
+        <com.example.my_quizzo.widgets.GothamButtonView
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/quiz_option_background"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Button"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+          
+    </LinearLayout>
+
+</LinearLayout>

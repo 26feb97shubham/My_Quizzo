@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/plane_bg">
+
+    <ImageView
+        android:id="@+id/badgeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/badgeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/quiz_app_badge"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/isLocked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.example.my_quizzo.widgets.GothamTextView
+        android:id="@+id/badge_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:lines="3"
+        android:padding="3dp"
+        android:text="@string/quiz_app_badge"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:typeface="normal" />
+
+</LinearLayout>

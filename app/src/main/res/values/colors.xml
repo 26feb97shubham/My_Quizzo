@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    //More Colors
+    <color name="light_orange">#FF9F39</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="grey">#ffd3d3d3</color>
+    <color name="green">#ff8dd304</color>
+    <color name="blue">#ff82e0ff</color>
+    <color name="yellow">#fffffbae</color>
+    <color name="red">#fff10800</color>
+    <color name="blue_light">#FFAAAAFF</color>
+    <color name="grey_cloud">#FFAAAAAA</color>
+    <color name="zero">#00000000</color>
+    <color name="translucent_black">#AA000000</color>
+    <color name="translucent_black_light">#55000000</color>
+    <color name="translucent_white">#aaffffff</color>
+    <color name="textColor">#FFF</color>
+    <color name="textFieldColor">#000</color>
+    <color name="textShadow">#FFF</color>
+    <color name="listViewBg">#DADFEE</color>
+    <color name="darker_translucent_black">#DD000000</color>
+    <color name="sendLightColor">#8897BF</color>
+    <color name="sendMeduimColor">#5D6CA5</color>
+    <color name="sendDarkColor">#515F9F</color>
+
+    <color name="barDarkColor">#CECECE</color>
+    <color name="barMeduimColor">#DFDEE0</color>
+    <color name="barLightColor">#F2F2F2</color>
+
+    <color name="color_Primary">#536dfe</color>
+    <color name="color_PrimaryDark">#536dfe</color>
+    <color name="color_Accent">#f44336</color>
+
+    <color name = "TextColorPrimary">#212121</color>
+    <color name = "TextColorSecondary">#757575</color>
+    <color name = "TextColorLightBlue">#01579b</color>
+
+    <color name = "ColorDivider">#BDBDBD</color>
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+</resources>

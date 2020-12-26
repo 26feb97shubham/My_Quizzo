@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper_user_waiting_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/plane_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/loading_user_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/images_array_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp" >
+
+            <ImageView
+                android:id="@+id/searching_for_opponent_images1"
+                android:layout_marginRight="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                 />
+            
+            <ImageView
+                android:id="@+id/searching_for_opponent_images2"
+                android:layout_marginRight="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                
+                 />
+
+            <ImageView
+                android:id="@+id/searching_for_opponent_images3"
+                android:layout_marginRight="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+			 />
+            
+            <ImageView
+                android:id="@+id/searching_for_opponent_images4"
+                android:layout_marginRight="5dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                
+                 />
+            
+        </LinearLayout>
+
+        <com.example.my_quizzo.widgets.GothamTextView
+            android:id="@+id/debug_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <com.example.my_quizzo.widgets.GothamTextView
+            android:id="@+id/debug_text_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

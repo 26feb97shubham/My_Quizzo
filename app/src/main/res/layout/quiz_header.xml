@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/usersLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            layout="@layout/user_quiz_progress" />
+        
+
+        <com.example.my_quizzo.widgets.CircularCounter
+                    xmlns:meter="http://schemas.android.com/apk/res-auto"
+			        android:id="@+id/timerView"
+			        android:layout_width="70dp"
+			        android:layout_height="70dp"
+			        android:padding="5dp"
+			        meter:range="10"
+			        meter:textSize="20sp"
+			        meter:textColor="#ffffff"
+			        meter:metricSize="10sp"
+			        meter:metricText="sec"
+		/>
+
+
+        <include
+            android:id="@+id/user2"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/user_quiz_progress_mirror" />
+
+</LinearLayout>
